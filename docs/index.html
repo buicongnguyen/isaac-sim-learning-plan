@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Isaac Sim Learning Plan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Robotics simulation study tracker</p>
+      <h1>Isaac Sim Learning Plan</h1>
+    </div>
+    <nav aria-label="Page sections">
+      <a href="#summary">Summary</a>
+      <a href="#plan">Plan</a>
+      <a href="#coursework">Coursework</a>
+      <a href="#links">Links</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="summary" class="section">
+      <div class="intro">
+        <h2>Current Finding</h2>
+        <p>
+          Cornell CS 4756/5756 Robot Learning does not appear to use Isaac Sim in its public homework materials.
+          Its assignments use Gymnasium-Robotics and MuJoCo FetchReach-v4. For Isaac Sim practice, the strongest
+          course-style examples found so far are University of Miami CSC398 and CSC752, plus NVIDIA hands-on materials.
+        </p>
+      </div>
+
+      <div class="quick-grid">
+        <article class="mini-card">
+          <span class="status warning">Not Isaac Sim</span>
+          <h3>Cornell CS 4756/5756</h3>
+          <p>Uses Gymnasium-Robotics and MuJoCo FetchReach-v4 in public assignments.</p>
+        </article>
+        <article class="mini-card">
+          <span class="status good">Uses Isaac Sim</span>
+          <h3>Miami CSC398</h3>
+          <p>Intro autonomous robots course with Isaac Sim assignment PDFs.</p>
+        </article>
+        <article class="mini-card">
+          <span class="status good">Uses Isaac Sim</span>
+          <h3>Miami CSC752</h3>
+          <p>Graduate autonomous robotics course with Isaac Sim activities and homework.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="plan" class="section">
+      <h2>Learning Roadmap</h2>
+      <p class="section-note">
+        This plan is meant to be tracked in Git. Update the status column as you complete each block.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Phase</th>
+              <th>Goal</th>
+              <th>Practice Output</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1. Setup</td>
+              <td>Install and validate Isaac Sim, GPU rendering, Python environment, and example scenes.</td>
+              <td>Run a sample scene and capture a screenshot or short video.</td>
+              <td>Not started</td>
+            </tr>
+            <tr>
+              <td>2. Core Isaac Sim</td>
+              <td>Learn stage/world creation, assets, physics, cameras, sensors, and action graphs.</td>
+              <td>Build a small mobile-robot scene with camera and lidar-like sensor output.</td>
+              <td>Not started</td>
+            </tr>
+            <tr>
+              <td>3. ROS 2 Bridge</td>
+              <td>Connect Isaac Sim to ROS 2 topics, TF, sensor messages, and robot control commands.</td>
+              <td>Drive a simulated robot from ROS 2 and record topic output.</td>
+              <td>Not started</td>
+            </tr>
+            <tr>
+              <td>4. Course Replication</td>
+              <td>Reproduce selected Miami CSC398 or CSC752 Isaac Sim homework workflows.</td>
+              <td>Complete laser scan, localization, or RRT-style practice in Isaac Sim.</td>
+              <td>Not started</td>
+            </tr>
+            <tr>
+              <td>5. Robot Learning</td>
+              <td>Bridge Cornell-style robot learning concepts from MuJoCo/Gymnasium into Isaac Sim or Isaac Lab.</td>
+              <td>Implement a small reaching, navigation, or manipulation learning experiment.</td>
+              <td>Not started</td>
+            </tr>
+            <tr>
+              <td>6. Portfolio Project</td>
+              <td>Create one end-to-end demo combining simulation, sensors, control, and learning.</td>
+              <td>Publish a README, video, and reproducible scripts.</td>
+              <td>Not started</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="actions">
+        <a class="button" href="learning-plan.md">Open editable tracker</a>
+        <a class="button secondary" href="coursework-research.md">Open source notes</a>
+      </div>
+    </section>
+
+    <section id="coursework" class="section">
+      <h2>Coursework References</h2>
+
+      <article class="course">
+        <span class="status warning">Checked, not Isaac Sim</span>
+        <h3>Cornell CS 4756/5756 Robot Learning</h3>
+        <p>
+          Public assignments use Gymnasium-Robotics and MuJoCo FetchReach-v4. I did not find Isaac Sim,
+          Isaac Lab, Isaac Gym, or Omniverse references in the checked assignment materials.
+        </p>
+        <div class="sources">
+          <a href="https://www.cs.cornell.edu/courses/cs4756/2026sp/">Course page</a>
+          <a href="https://raw.githubusercontent.com/kuanfang/cornell-cs4756-2026sp/master/assignments/A1/programming/CS4756_A1_Programming_Release.ipynb">A1 notebook</a>
+          <a href="https://raw.githubusercontent.com/kuanfang/cornell-cs4756-2026sp/master/assignments/A2/programming/student.ipynb">A2 notebook</a>
+          <a href="https://raw.githubusercontent.com/kuanfang/cornell-cs4756-2026sp/master/assignments/A4/A4.ipynb">A4 notebook</a>
+        </div>
+      </article>
+
+      <article class="course">
+        <span class="status good">Uses Isaac Sim</span>
+        <h3>University of Miami CSC398: Introduction to Autonomous Robots</h3>
+        <p>
+          Uses Gazebo and Isaac-Sim for simulation. Assignment materials include Isaac Sim world startup
+          commands and practice around laser scans and localization.
+        </p>
+        <div class="sources">
+          <a href="https://www.cs.miami.edu/~visser/csc398-autonomous-robots.html">Course page</a>
+          <a href="https://www.cs.miami.edu/~visser/csc398-files/CSC398-Assignment-2.pdf">Assignment 2 PDF</a>
+          <a href="https://www.cs.miami.edu/home/visser/csc398-files/CSC398-Assignment-5.pdf">Assignment 5 PDF</a>
+        </div>
+      </article>
+
+      <article class="course">
+        <span class="status good">Uses Isaac Sim</span>
+        <h3>University of Miami CSC752: Autonomous Robotic Systems</h3>
+        <p>
+          Graduate course with practical ROS and ISAAC Simulation work. Includes Isaac Sim setup, particle
+          filter localization, and RRT path planning assignments.
+        </p>
+        <div class="sources">
+          <a href="https://www.cs.miami.edu/~visser/csc752-autonomous-robotic-systems.html">Course page</a>
+          <a href="https://www.cs.miami.edu/home/visser/csc752-files/CSC752-Activity-1.pdf">Activity 1 PDF</a>
+          <a href="https://www.cs.miami.edu/home/visser/csc752-files/CSC752-Assignment-5.pdf">Assignment 5 PDF</a>
+          <a href="https://www.cs.miami.edu/home/visser/csc752-files/CSC752-Assignment-6.pdf">Assignment 6 PDF</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="links" class="section">
+      <h2>Practice Materials</h2>
+      <div class="link-list">
+        <a href="https://nvidia-ai-iot.github.io/isaac-sim-jetson-hil-course-doc/">NVIDIA Isaac Sim + Jetson HIL Course Docs</a>
+        <a href="https://nvidia-ai-iot.github.io/isaac-sim-jetson-hil-course-doc/isaac-sim/index.html">NVIDIA Isaac Sim exercises</a>
+        <a href="https://nvidia-ai-iot.github.io/isaac-sim-jetson-hil-course-doc/hardware-in-loop.html">NVIDIA hardware-in-loop exercises</a>
+        <a href="https://developer.nvidia.com/industrial-metaverse-teaching-kit-syllabus">NVIDIA Industrial Metaverse Teaching Kit</a>
+        <a href="https://simondlevy.academic.wlu.edu/2023/09/10/assignment-6/">Related Isaac Gym assignment</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Last updated: 2026-06-22. Update progress in <code>docs/learning-plan.md</code>.</p>
+  </footer>
+</body>
+</html>
