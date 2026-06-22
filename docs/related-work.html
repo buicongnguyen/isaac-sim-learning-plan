@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Related Work and Coursework</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Research and coursework map</p>
+      <h1>Related Work</h1>
+    </div>
+    <nav aria-label="Site navigation">
+      <a href="index.html">Home</a>
+      <a href="hiking-in-the-wild.html">Paper Plan</a>
+      <a href="coursework-research.md">Source Notes</a>
+      <a href="learning-plan.md">Tracker</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="intro">
+        <h2>Problem Space</h2>
+        <p>
+          The main direction is <strong>perceptive humanoid locomotion over unstructured terrain</strong>.
+          This means moving from blind walking toward policies that use onboard perception, terrain-aware training,
+          and sim-to-real evaluation.
+        </p>
+      </div>
+
+      <div class="quick-grid">
+        <article class="mini-card">
+          <span class="status good">Leading direction</span>
+          <h3>Perception + Locomotion</h3>
+          <p>Depth, terrain geometry, and proprioception are used directly by the policy.</p>
+        </article>
+        <article class="mini-card">
+          <span class="status good">Research skill</span>
+          <h3>Mechanism Ablations</h3>
+          <p>The important work is proving which design choices improve stability and safety.</p>
+        </article>
+        <article class="mini-card">
+          <span class="status good">Isaac Sim skill</span>
+          <h3>Reproducible Tasks</h3>
+          <p>A senior Isaac Sim project needs custom environments, sensors, rewards, and reporting.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Paper Thread To Follow</h2>
+      <article class="course">
+        <span class="status good">Target paper</span>
+        <h3>Hiking in the Wild</h3>
+        <p>
+          Focuses on scalable perceptive parkour and hiking for humanoids. The key ideas to reproduce are
+          depth-conditioned policy learning, terrain edge safety, and flat patch command generation.
+        </p>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2601.07718">Paper</a>
+          <a href="https://project-instinct.github.io/hiking-in-the-wild/">Project page</a>
+          <a href="hiking-in-the-wild.html">Reproduction plan</a>
+        </div>
+      </article>
+
+      <article class="course">
+        <span class="status good">Earlier direction</span>
+        <h3>Robot Parkour Learning</h3>
+        <p>
+          A useful predecessor direction: agile parkour behavior with learned perception and locomotion.
+          Read it to understand how the field moved from quadruped parkour toward humanoid parkour.
+        </p>
+        <div class="sources">
+          <a href="https://proceedings.mlr.press/v229/zhuang23a.html">PMLR page</a>
+        </div>
+      </article>
+
+      <article class="course">
+        <span class="status good">Humanoid direction</span>
+        <h3>Humanoid Parkour Learning</h3>
+        <p>
+          Helpful for understanding how parkour-style locomotion becomes harder with humanoids because of balance,
+          contacts, whole-body control, and narrow support regions.
+        </p>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2406.10759">arXiv page</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Coursework References</h2>
+      <article class="course">
+        <span class="status warning">Checked, not Isaac Sim</span>
+        <h3>Cornell CS 4756/5756 Robot Learning</h3>
+        <p>
+          Public assignments use Gymnasium-Robotics and MuJoCo FetchReach-v4, not Isaac Sim. Still useful for
+          robot learning concepts that can later be transferred into Isaac Lab.
+        </p>
+        <div class="sources">
+          <a href="https://www.cs.cornell.edu/courses/cs4756/2026sp/">Course page</a>
+          <a href="coursework-research.md">Research notes</a>
+        </div>
+      </article>
+
+      <article class="course">
+        <span class="status good">Uses Isaac Sim</span>
+        <h3>University of Miami CSC398 and CSC752</h3>
+        <p>
+          These are the clearest course-style Isaac Sim references found so far. They include assignment PDFs
+          using Isaac Sim worlds for laser scans, localization, and path planning.
+        </p>
+        <div class="sources">
+          <a href="https://www.cs.miami.edu/~visser/csc398-autonomous-robots.html">CSC398</a>
+          <a href="https://www.cs.miami.edu/~visser/csc752-autonomous-robotic-systems.html">CSC752</a>
+          <a href="coursework-research.md">Research notes</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Documents In This Site</h2>
+      <div class="doc-grid">
+        <a class="doc-link" href="learning-plan.md">
+          <strong>General Learning Tracker</strong>
+          <span>Checklist for Isaac Sim, ROS 2, coursework, and portfolio work.</span>
+        </a>
+        <a class="doc-link" href="hiking-in-the-wild-reproduction-plan.md">
+          <strong>Full Paper Reproduction Plan</strong>
+          <span>Long Markdown plan with weekly schedule and implementation stages.</span>
+        </a>
+        <a class="doc-link" href="coursework-research.md">
+          <strong>Coursework Research Notes</strong>
+          <span>Source notes for Cornell, Miami courses, and NVIDIA learning materials.</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Use this page as the related-work map for the Isaac Sim learning project.</p>
+  </footer>
+</body>
+</html>

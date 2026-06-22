@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hiking in the Wild Reproduction Plan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Paper reproduction track</p>
+      <h1>Hiking in the Wild</h1>
+    </div>
+    <nav aria-label="Site navigation">
+      <a href="index.html">Home</a>
+      <a href="related-work.html">Related Work</a>
+      <a href="learning-plan.md">Tracker</a>
+      <a href="hiking-in-the-wild-reproduction-plan.md">Markdown</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="intro">
+        <h2>Reproduction Goal</h2>
+        <p>
+          Reproduce the core Isaac Sim and Isaac Lab ideas from <strong>Hiking in the Wild: A Scalable Perceptive Parkour Framework for Humanoids</strong>.
+          The first target is simulation reproduction, not full real-robot deployment.
+        </p>
+      </div>
+
+      <div class="quick-grid">
+        <article class="mini-card">
+          <span class="status good">Core problem</span>
+          <h3>Perceptive Humanoid Locomotion</h3>
+          <p>Train a humanoid to move over rough terrain using depth perception and proprioception.</p>
+        </article>
+        <article class="mini-card">
+          <span class="status good">Key mechanism</span>
+          <h3>Safer Footholds</h3>
+          <p>Use terrain edge detection and foot safety points to reduce risky partial foot contacts.</p>
+        </article>
+        <article class="mini-card">
+          <span class="status good">Key mechanism</span>
+          <h3>Flat Patch Commands</h3>
+          <p>Sample feasible target patches so training does not reward fake shortcuts.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Learning Sequence</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Level</th>
+              <th>Focus</th>
+              <th>Done When</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1. Paper Reading</td>
+              <td>Understand the problem, pipeline, observations, rewards, ablations, and failure modes.</td>
+              <td>You can explain the paper without looking at it.</td>
+            </tr>
+            <tr>
+              <td>2. Codebase Reading</td>
+              <td>Map Project Instinct task code, terrain code, rewards, observations, and policy flow.</td>
+              <td>You know where each mechanism lives in the released code.</td>
+            </tr>
+            <tr>
+              <td>3. Isaac Lab Baseline</td>
+              <td>Create or modify a simple locomotion task with rough terrain and velocity tracking.</td>
+              <td>A baseline policy runs and logs rewards/reset reasons.</td>
+            </tr>
+            <tr>
+              <td>4. Perception</td>
+              <td>Add depth or ray-cast observations, history, and observation randomization.</td>
+              <td>You can compare blind locomotion with perception-conditioned locomotion.</td>
+            </tr>
+            <tr>
+              <td>5. Paper Mechanisms</td>
+              <td>Add flat patch sampling, terrain edge detection, and simplified foot safety penalties.</td>
+              <td>You can run ablations showing what each mechanism changes.</td>
+            </tr>
+            <tr>
+              <td>6. Mini Paper</td>
+              <td>Write a report with method, simplifications, plots, screenshots, videos, and failure cases.</td>
+              <td>The project is reproducible from clean instructions.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section split">
+      <article>
+        <h2>Six Week Plan</h2>
+        <ol class="timeline">
+          <li><strong>Week 1:</strong> read the paper, install Isaac Lab, run one example, clone Project Instinct.</li>
+          <li><strong>Week 2:</strong> create a baseline locomotion task and record reward/reset statistics.</li>
+          <li><strong>Week 3:</strong> add stairs, gaps, ramps, platforms, and depth observation.</li>
+          <li><strong>Week 4:</strong> implement flat patch sampling and position-based commands.</li>
+          <li><strong>Week 5:</strong> implement terrain edge detection and simplified foot safety penalty.</li>
+          <li><strong>Week 6:</strong> run ablations, record videos, and write a mini paper-style report.</li>
+        </ol>
+      </article>
+
+      <article>
+        <h2>Senior-Level Checklist</h2>
+        <ul class="checklist">
+          <li>Custom Isaac Lab task</li>
+          <li>Custom terrain generation</li>
+          <li>Custom observations and commands</li>
+          <li>Custom reward and termination terms</li>
+          <li>Depth/perception visualization</li>
+          <li>Ablation table and failure analysis</li>
+          <li>Clear reproducible README</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Source Links</h2>
+      <div class="link-list">
+        <a href="https://arxiv.org/abs/2601.07718">Paper</a>
+        <a href="https://project-instinct.github.io/hiking-in-the-wild/">Project page</a>
+        <a href="https://github.com/project-instinct/InstinctLab">InstinctLab code</a>
+        <a href="https://github.com/project-instinct/instinct_rl">instinct_rl</a>
+        <a href="https://isaac-sim.github.io/IsaacLab/">Isaac Lab docs</a>
+        <a href="hiking-in-the-wild-reproduction-plan.md">Full Markdown plan</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Part of the Isaac Sim learning hub. Edit the full plan in <code>docs/hiking-in-the-wild-reproduction-plan.md</code>.</p>
+  </footer>
+</body>
+</html>

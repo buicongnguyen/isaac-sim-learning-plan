@@ -140,7 +140,8 @@ main {
 }
 
 .mini-card,
-.course {
+.course,
+.doc-link {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -234,6 +235,59 @@ tr:last-child td {
   margin-bottom: 14px;
 }
 
+.doc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.doc-link {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 136px;
+  padding: 18px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.doc-link strong {
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.doc-link span {
+  color: var(--muted);
+}
+
+.doc-link.featured {
+  border-color: var(--accent);
+}
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.7fr);
+  gap: 18px;
+}
+
+.split article {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.timeline,
+.checklist {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.timeline li,
+.checklist li {
+  margin-bottom: 8px;
+}
+
 .sources,
 .link-list {
   display: flex;
@@ -274,6 +328,10 @@ footer p {
 
   nav {
     justify-content: flex-start;
+  }
+
+  .split {
+    grid-template-columns: 1fr;
   }
 
   h1 {

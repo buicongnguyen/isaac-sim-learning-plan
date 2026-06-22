@@ -9,14 +9,14 @@
 <body>
   <header class="topbar">
     <div>
-      <p class="eyebrow">Robotics simulation study tracker</p>
-      <h1>Isaac Sim Learning Plan</h1>
+      <p class="eyebrow">Robotics simulation study hub</p>
+      <h1>Isaac Sim Learning Hub</h1>
     </div>
-    <nav aria-label="Page sections">
+    <nav aria-label="Site navigation">
       <a href="#summary">Summary</a>
-      <a href="#plan">Plan</a>
-      <a href="#coursework">Coursework</a>
-      <a href="#links">Links</a>
+      <a href="#documents">Documents</a>
+      <a href="hiking-in-the-wild.html">Paper Plan</a>
+      <a href="related-work.html">Related Work</a>
     </nav>
   </header>
 
@@ -25,36 +25,63 @@
       <div class="intro">
         <h2>Current Finding</h2>
         <p>
-          Cornell CS 4756/5756 Robot Learning does not appear to use Isaac Sim in its public homework materials.
-          Its assignments use Gymnasium-Robotics and MuJoCo FetchReach-v4. For Isaac Sim practice, the strongest
-          course-style examples found so far are University of Miami CSC398 and CSC752, plus NVIDIA hands-on materials.
+          This site organizes the learning track for becoming strong with Isaac Sim and Isaac Lab. It keeps the
+          coursework research, the general study tracker, and the paper-reproduction plan for <strong>Hiking in the Wild</strong>
+          in one public GitHub Pages place.
         </p>
       </div>
 
       <div class="quick-grid">
         <article class="mini-card">
-          <span class="status warning">Not Isaac Sim</span>
+          <span class="status good">Primary target</span>
+          <h3>Senior Isaac Sim Skills</h3>
+          <p>Custom tasks, sensors, terrain, rewards, training, debugging, and reproducible reports.</p>
+        </article>
+        <article class="mini-card">
+          <span class="status good">Paper track</span>
+          <h3>Hiking in the Wild</h3>
+          <p>Use perceptive humanoid locomotion as the main paper reproduction benchmark.</p>
+        </article>
+        <article class="mini-card">
+          <span class="status warning">Coursework note</span>
           <h3>Cornell CS 4756/5756</h3>
-          <p>Uses Gymnasium-Robotics and MuJoCo FetchReach-v4 in public assignments.</p>
+          <p>Useful for robot learning concepts, but its public assignments use MuJoCo instead of Isaac Sim.</p>
         </article>
-        <article class="mini-card">
-          <span class="status good">Uses Isaac Sim</span>
-          <h3>Miami CSC398</h3>
-          <p>Intro autonomous robots course with Isaac Sim assignment PDFs.</p>
-        </article>
-        <article class="mini-card">
-          <span class="status good">Uses Isaac Sim</span>
-          <h3>Miami CSC752</h3>
-          <p>Graduate autonomous robotics course with Isaac Sim activities and homework.</p>
-        </article>
+      </div>
+    </section>
+
+    <section id="documents" class="section">
+      <h2>Document Library</h2>
+      <p class="section-note">
+        Start with the HTML pages for reading. Use the Markdown files as editable source documents.
+      </p>
+
+      <div class="doc-grid">
+        <a class="doc-link featured" href="hiking-in-the-wild.html">
+          <strong>Hiking in the Wild Paper Plan</strong>
+          <span>Readable reproduction roadmap for the perceptive humanoid locomotion paper.</span>
+        </a>
+        <a class="doc-link" href="related-work.html">
+          <strong>Related Work and Coursework</strong>
+          <span>Research direction, course references, and why this problem is worth following.</span>
+        </a>
+        <a class="doc-link" href="learning-plan.md">
+          <strong>General Learning Tracker</strong>
+          <span>Editable checklist for Isaac Sim, Isaac Lab, ROS 2, and portfolio milestones.</span>
+        </a>
+        <a class="doc-link" href="hiking-in-the-wild-reproduction-plan.md">
+          <strong>Full Markdown Reproduction Plan</strong>
+          <span>Detailed weekly schedule, algorithms, ablations, and senior-level checklist.</span>
+        </a>
+        <a class="doc-link" href="coursework-research.md">
+          <strong>Coursework Research Notes</strong>
+          <span>Source notes from the Cornell, Miami, and NVIDIA course-material search.</span>
+        </a>
       </div>
     </section>
 
     <section id="plan" class="section">
       <h2>Learning Roadmap</h2>
-      <p class="section-note">
-        This plan is meant to be tracked in Git. Update the status column as you complete each block.
-      </p>
 
       <div class="table-wrap">
         <table>
@@ -108,9 +135,9 @@
       </div>
 
       <div class="actions">
-        <a class="button" href="learning-plan.md">Open editable tracker</a>
-        <a class="button secondary" href="coursework-research.md">Open source notes</a>
-        <a class="button secondary" href="hiking-in-the-wild-reproduction-plan.md">Open paper reproduction plan</a>
+        <a class="button" href="hiking-in-the-wild.html">Open paper plan</a>
+        <a class="button secondary" href="related-work.html">Open related work</a>
+        <a class="button secondary" href="learning-plan.md">Open tracker</a>
       </div>
     </section>
 
@@ -165,7 +192,8 @@
     <section id="links" class="section">
       <h2>Practice Materials</h2>
       <div class="link-list">
-        <a href="hiking-in-the-wild-reproduction-plan.md">Hiking in the Wild reproduction plan</a>
+        <a href="hiking-in-the-wild.html">Hiking in the Wild paper plan</a>
+        <a href="related-work.html">Related work page</a>
         <a href="https://nvidia-ai-iot.github.io/isaac-sim-jetson-hil-course-doc/">NVIDIA Isaac Sim + Jetson HIL Course Docs</a>
         <a href="https://nvidia-ai-iot.github.io/isaac-sim-jetson-hil-course-doc/isaac-sim/index.html">NVIDIA Isaac Sim exercises</a>
         <a href="https://nvidia-ai-iot.github.io/isaac-sim-jetson-hil-course-doc/hardware-in-loop.html">NVIDIA hardware-in-loop exercises</a>
@@ -176,7 +204,7 @@
   </main>
 
   <footer>
-    <p>Last updated: 2026-06-22. Update progress in <code>docs/learning-plan.md</code>.</p>
+    <p>Last updated: 2026-06-23. Update progress in <code>docs/learning-plan.md</code>.</p>
   </footer>
 </body>
 </html>
