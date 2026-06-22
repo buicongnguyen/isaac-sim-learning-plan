@@ -72,3 +72,7 @@ Notes:
 - University of Miami CSC752: https://www.cs.miami.edu/~visser/csc752-autonomous-robotic-systems.html
 - NVIDIA Isaac Sim + Jetson HIL docs: https://nvidia-ai-iot.github.io/isaac-sim-jetson-hil-course-doc/
 - NVIDIA Industrial Metaverse Teaching Kit: https://developer.nvidia.com/industrial-metaverse-teaching-kit-syllabus
+
+## Paper Reproduction Track
+
+- Hiking in the Wild reproduction plan: ./hiking-in-the-wild-reproduction-plan.md
