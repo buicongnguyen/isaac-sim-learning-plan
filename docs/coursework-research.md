@@ -29,12 +29,16 @@ Notes:
 - The course page says it uses Gazebo and Isaac-Sim for simulation.
 - Assignment 2 uses an HSR Isaac Sim world for laser-scan processing practice.
 - Assignment 5 starts an Isaac Sim world for particle-filter localization.
+- Re-check on 2026-06-23: the instructor's teaching page lists CSC 398 for Fall 2024 and Fall 2026, but the linked CSC398 course page itself still shows a 2024 last update and 2024 assignment PDFs. Treat Fall 2026 as planned/listed, not yet a published refreshed course page.
 
 Links:
 
 - Course page: https://www.cs.miami.edu/~visser/csc398-autonomous-robots.html
+- Course page, canonical `/home/visser` path: https://www.cs.miami.edu/home/visser/csc398-autonomous-robots.html
+- Teaching page listing Fall 2026: https://www.cs.miami.edu/home/visser/teaching.html
 - Assignment 2 PDF: https://www.cs.miami.edu/~visser/csc398-files/CSC398-Assignment-2.pdf
 - Assignment 5 PDF: https://www.cs.miami.edu/home/visser/csc398-files/CSC398-Assignment-5.pdf
+- Assignment 6 PDF: https://www.cs.miami.edu/~visser/csc398-files/CSC398-Assignment-6.pdf
 
 ## University of Miami CSC752: Autonomous Robotic Systems
 
