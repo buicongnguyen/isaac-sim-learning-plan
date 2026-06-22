@@ -73,6 +73,20 @@ Notes:
 - NVIDIA Isaac Sim + Jetson HIL docs: https://nvidia-ai-iot.github.io/isaac-sim-jetson-hil-course-doc/
 - NVIDIA Industrial Metaverse Teaching Kit: https://developer.nvidia.com/industrial-metaverse-teaching-kit-syllabus
 
+## Humanoid RL and Deep RL Resources
+
+- The Construct Humanoid Robot Reinforcement Learning Training: https://www.theconstruct.ai/humanoid-robot-reinforcement-learning-training/
+- NVIDIA Isaac Lab RL lesson: https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-lab/latest/train-your-first-robot-with-isaac-lab/01-what-is-reinforcement-learning.html
+- Isaac Lab documentation: https://isaac-sim.github.io/IsaacLab/
+- Berkeley CS 285 Deep Reinforcement Learning: https://rail.eecs.berkeley.edu/deeprlcourse/
+- Stanford CS234 Reinforcement Learning: https://web.stanford.edu/class/cs234/
+- Stanford CS224R Deep Reinforcement Learning: https://online.stanford.edu/courses/cs224r-deep-reinforcement-learning
+- ETH Zurich Robot Learning: https://cvg.ethz.ch/lectures/Robot-Learning/
+- Hugging Face Deep RL Course: https://huggingface.co/learn/deep-rl-course/en/unit0/introduction
+- Unitree RL Lab: https://github.com/unitreerobotics/unitree_rl_lab
+- Humanoid-Gym: https://github.com/roboterax/humanoid-gym
+- Awesome Humanoid Robot Learning: https://github.com/YanjieZe/awesome-humanoid-robot-learning
+
 ## Paper Reproduction Track
 
 - Hiking in the Wild reproduction plan: ./hiking-in-the-wild-reproduction-plan.md

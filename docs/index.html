@@ -15,6 +15,7 @@
     <nav aria-label="Site navigation">
       <a href="#summary">Summary</a>
       <a href="#documents">Documents</a>
+      <a href="#humanoid-rl">Humanoid RL</a>
       <a href="hiking-in-the-wild.html">Paper Plan</a>
       <a href="related-work.html">Related Work</a>
     </nav>
@@ -189,6 +190,80 @@
       </article>
     </section>
 
+    <section id="humanoid-rl" class="section">
+      <h2>Humanoid RL and Deep RL Path</h2>
+      <p class="section-note">
+        Recommended next resources for humanoid robotics, Isaac Lab reinforcement learning, and deep RL foundations.
+      </p>
+
+      <article class="course">
+        <span class="status good">Most direct humanoid track</span>
+        <h3>The Construct: Humanoid Robot Reinforcement Learning Training</h3>
+        <p>
+          Hands-on humanoid RL training around Unitree G1, Isaac Lab, MuJoCo, Sim2Real, and real robot deployment.
+          Use this as the practical north-star path if the goal is humanoid locomotion and whole-body control.
+        </p>
+        <div class="sources">
+          <a href="https://www.theconstruct.ai/humanoid-robot-reinforcement-learning-training/">Training page</a>
+        </div>
+      </article>
+
+      <article class="course">
+        <span class="status good">Best Isaac Lab practice</span>
+        <h3>NVIDIA: Reinforcement Learning for Robots with Isaac Lab</h3>
+        <p>
+          Official Isaac Lab learning material for training robot policies in simulation. Start here for reward
+          design, policy training, evaluation, and the practical deep RL loop inside the Isaac ecosystem.
+        </p>
+        <div class="sources">
+          <a href="https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-lab/latest/train-your-first-robot-with-isaac-lab/01-what-is-reinforcement-learning.html">Isaac Lab RL lesson</a>
+          <a href="https://isaac-sim.github.io/IsaacLab/">Isaac Lab docs</a>
+        </div>
+      </article>
+
+      <article class="course">
+        <span class="status good">Deep RL theory</span>
+        <h3>Berkeley CS 285 and Stanford CS234</h3>
+        <p>
+          Berkeley CS 285 is the stronger deep RL and robot-learning theory path. Stanford CS234 is a cleaner
+          foundation pass for MDPs, value functions, policy gradients, exploration, and deep RL basics.
+        </p>
+        <div class="sources">
+          <a href="https://rail.eecs.berkeley.edu/deeprlcourse/">Berkeley CS 285</a>
+          <a href="https://web.stanford.edu/class/cs234/">Stanford CS234</a>
+          <a href="https://online.stanford.edu/courses/cs224r-deep-reinforcement-learning">Stanford CS224R</a>
+        </div>
+      </article>
+
+      <article class="course">
+        <span class="status good">Robot learning bridge</span>
+        <h3>ETH Zurich Robot Learning and Hugging Face Deep RL</h3>
+        <p>
+          ETH's Robot Learning course connects imitation learning, reinforcement learning, policy optimization,
+          and modern robotics foundation models. Hugging Face's course is a free, practical warm-up for deep RL.
+        </p>
+        <div class="sources">
+          <a href="https://cvg.ethz.ch/lectures/Robot-Learning/">ETH Robot Learning</a>
+          <a href="https://huggingface.co/learn/deep-rl-course/en/unit0/introduction">Hugging Face Deep RL</a>
+        </div>
+      </article>
+
+      <article class="course">
+        <span class="status good">Humanoid codebases</span>
+        <h3>Unitree RL Lab and Humanoid-Gym</h3>
+        <p>
+          Use these as implementation references when moving from coursework into humanoid locomotion experiments.
+          Unitree RL Lab targets Unitree robots on Isaac Lab; Humanoid-Gym focuses on humanoid locomotion and
+          zero-shot sim-to-real transfer using Isaac Gym-style workflows.
+        </p>
+        <div class="sources">
+          <a href="https://github.com/unitreerobotics/unitree_rl_lab">Unitree RL Lab</a>
+          <a href="https://github.com/roboterax/humanoid-gym">Humanoid-Gym</a>
+          <a href="https://github.com/YanjieZe/awesome-humanoid-robot-learning">Awesome Humanoid Robot Learning</a>
+        </div>
+      </article>
+    </section>
+
     <section id="links" class="section">
       <h2>Practice Materials</h2>
       <div class="link-list">
@@ -199,6 +274,9 @@
         <a href="https://nvidia-ai-iot.github.io/isaac-sim-jetson-hil-course-doc/hardware-in-loop.html">NVIDIA hardware-in-loop exercises</a>
         <a href="https://developer.nvidia.com/industrial-metaverse-teaching-kit-syllabus">NVIDIA Industrial Metaverse Teaching Kit</a>
         <a href="https://simondlevy.academic.wlu.edu/2023/09/10/assignment-6/">Related Isaac Gym assignment</a>
+        <a href="https://docs.nvidia.com/learning/physical-ai/getting-started-with-isaac-lab/latest/train-your-first-robot-with-isaac-lab/01-what-is-reinforcement-learning.html">NVIDIA Isaac Lab RL lesson</a>
+        <a href="https://www.theconstruct.ai/humanoid-robot-reinforcement-learning-training/">Humanoid RL training</a>
+        <a href="https://rail.eecs.berkeley.edu/deeprlcourse/">Berkeley CS 285 Deep RL</a>
       </div>
     </section>
   </main>
